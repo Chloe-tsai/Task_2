@@ -1,0 +1,310 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* css reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@charset "utf-8";
+
+/*
+ * Page name
+ * Copyright 2020
+ * Auther
+ * Licensed
+*/
+
+/* ------------------------------*\
+    Content
+\* ------------------------------*/
+/**
+ * Content ..............You are reading it!
+ * Core.................. Set cDefault style
+ * Gobal................. Set common styles
+ * Layout................ Set grid
+ * Components............ ... Set Components styles
+ * Pages ................ Set different page styles
+*/
+
+/* color */
+:root{
+	--primary--200:#E8FEC5;
+	--primary--300:#C0FA73;	
+	--primary--400:#57A203;
+	--neutral--white:#FFFFFF;
+	--neutral--900:#212529;
+	--neutral--600:#6C757D;
+	--neutral--300:#DEE2E6;
+
+
+}
+
+/*------------------------------------*\
+    Core
+\*------------------------------------*/
+
+/* Default style */
+*,
+::before,
+::after{
+	box-sizing: border-box;
+}
+
+img{
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+body{
+	font-family: "Noto Sans TC", sans-serif,"Mina";
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: 0.05em;
+}
+
+a{
+	color: var(--neutral--900) ;
+	text-decoration: none;
+	display: block;
+	font-weight: 500;
+}
+
+/*------------------------------------*\
+    Layout
+\*------------------------------------*/
+.container{
+	width: 100%;
+	max-width: 1296px;
+	margin: 0 auto;
+	/* border: 1px solid #000; */
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: -12px;
+	padding-right: -12px;
+
+}
+
+.col-1,.col-2,.col-3,.col-4,.col-5,
+.col-6,.col-7,.col-8,.col-9,.col-10,
+.col-11,.col-12{
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.col-1{
+	width: calc(100% / 12);
+}
+
+.col-2{
+	width: calc(100% / 12 * 2);
+}
+
+.col-3{
+	width: calc(100% / 12 * 3);
+}
+
+.col-4{
+	width: calc(100% / 12 * 4);
+}
+
+.col-5{
+	width: calc(100% / 12 * 5);
+}
+
+.col-6{
+	width: calc(100% / 12 * 6);
+}
+
+.col-7{
+	width: calc(100% / 12 *7);
+}
+
+.col-8{
+	width: calc(100% / 12 *8);
+}
+
+.col-9{
+	width: calc(100% / 12 * 9);
+}
+
+.col-10{
+	width: calc(100% / 12* 10);
+}
+
+.col-11{
+	width: calc(100% / 12 * 11);
+}
+
+.col-12{
+	width: 100%;
+}
+
+/*------------------------------------*\
+    Global
+\*------------------------------------*/
+
+.h3{
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 1.2;
+}
+
+.h4{
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.2;
+}
+
+
+
+.h6{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+.text-primary-400{
+	color: var(--primary--400);
+}
+
+.text-neutral-900{
+	color: var(--neutral--900);
+}
+
+.text-neutral-600{
+	color: var(--neutral--600);
+}
+.text-neutral-300{
+	color: var(--neutral--300);
+}
+
+
+/*------------------------------------*\
+    Utility
+\*------------------------------------*/
+
+/* padding */
+.py-12{
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+
+.py-16{
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.py-24{
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+
+.py-32{
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+
+.pr-40{
+	padding-right: 40px;
+}
+
+
+.pr-48{
+	padding-right: 48px;
+}
+
+
+/* margin */
+.mb-4{
+	margin-bottom: 4px;
+}
+
+.mb-12{
+	margin-bottom: 12px;
+}
+
+.mb-16{
+	margin-bottom: 16px;
+}
+
+.mb-24{
+	margin-bottom: 24px;
+}
+
+.mb-32{
+	margin-bottom: 32px;
+}
+
+.mb-48{
+	margin-bottom: 48px;
+}
+
+.mr-12{
+	margin-right: 12px;
+}
+.mr-24{
+	margin-right: 24px;
+}
+
+.ml-12{
+	margin-left: 12px;
+}
+.mr-8{
+	margin-right: 8px;
+}
