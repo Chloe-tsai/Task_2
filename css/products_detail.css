@@ -1,0 +1,249 @@
+@charset "utf-8";
+
+/*
+ * Page name
+ * Copyright 2025
+ * Auther
+ * Licensed
+*/
+
+/* ------------------------------*\
+    Content
+\* ------------------------------*/
+/**
+ * Content ..............You are reading it!
+ * Navigation
+ * breadcrumb
+ * products
+ * products detail
+ * banner
+ * footer
+
+*/
+
+
+/*------------------------------------*\
+    Navigation
+\*------------------------------------*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.navbar .container{
+    justify-content: space-between;
+    display: inline-flex;
+}
+
+.navbar .nav_item{
+    padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.navbar .nav_person{
+    padding: 12px;
+}
+
+.navbar .nav_list,.navbar .nav_item{
+    display: inline-flex;
+}
+.navbar .container,.navbar .nav_person{
+    align-content: center;
+}
+
+/*------------------------------------*\
+    products
+\*------------------------------------*/
+/* product */
+.product_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+.product_col{
+    width: calc(100%/ 12 * 6);
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+
+/*------------------------------------*\
+    breadcrumb
+\*------------------------------------*/
+/* breadcrumb */
+.breadcrumb{
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item:not(:first-child)::before {
+    content: "/";
+    padding: 0 12px;
+    color: var(--neutral--300);
+    font-weight: 700;
+}
+
+.breadcrumb-link{
+    display: inline-block;
+    color: var(--neutral--600);
+    text-decoration: none;
+}
+
+.breadcrumb-item{
+    font-weight: 500;
+}
+
+/*------------------------------------*\
+    products detail
+\*------------------------------------*/
+
+/* product */
+.del-price{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--neutral--500);
+    padding-left: 8px;
+
+}
+/* product color */
+.product_color {
+    display: inline-flex;
+}
+.product_color .color{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 64px;
+    color: var(--neutral--600);
+}
+
+/* product size */
+.product_button{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.btn_product_size{
+    border: 1px solid var(--neutral--300) !important;
+    width: 160px;
+}
+
+.btn_product_size.active,
+.btn_product_size:hover{
+     border: 1px solid var(--neutral--900) !important;
+
+}
+
+/* product like */
+.product_like{
+    display: flex;
+    gap: 8px;
+}
+.product_like .btn{
+    width: 50%;
+}
+
+.product_like .btn-light{
+    border: 1px solid var(--neutral--900);
+}
+.product_like .btn-dark{
+    border: 1px solid var(--neutral--900);
+}
+
+.product_like .bi{
+    padding-right: 8px
+}
+
+/* product info */
+.product_info_item{
+    border-bottom: 1px solid var(--neutral--300);
+}
+.product_info_item p {
+    color: var(--neutral--600);
+}
+.product_info_title{
+    font-weight: 500;
+}
+
+/*------------------------------------*\
+    banner
+\*------------------------------------*/
+
+/* banner */
+.btn{
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.btn-dark{
+    background-color: var(--neutral--900);
+    color: var(--neutral--white);
+
+}
+
+.banner{
+    background-color: var(--primary--200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------------------------------*\
+    footer
+\*------------------------------------*/
+/* footer */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer_list {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer .footer_nav {
+    display: flex;
+}
+
+.footer  .footer_item{
+    padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.footer .footer_list,.footer .footer_item{
+    display: inline-flex;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;  
+    justify-content: center;
+    text-align: center;
+}
+.copyright .copyright_item{
+    color: var(--neutral--600);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}

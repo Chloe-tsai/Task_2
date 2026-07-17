@@ -58,7 +58,7 @@ table {
 
 /*
  * Page name
- * Copyright 2020
+ * Copyright 2025
  * Auther
  * Licensed
 */
@@ -68,7 +68,7 @@ table {
 \* ------------------------------*/
 /**
  * Content ..............You are reading it!
- * Core.................. Set cDefault style
+ * Core.................. Set Default style
  * Gobal................. Set common styles
  * Layout................ Set grid
  * Components............ ... Set Components styles
@@ -81,9 +81,10 @@ table {
 	--primary--300:#C0FA73;	
 	--primary--400:#57A203;
 	--neutral--white:#FFFFFF;
-	--neutral--900:#212529;
-	--neutral--600:#6C757D;
 	--neutral--300:#DEE2E6;
+	--neutral--500:#ADB5BD;
+	--neutral--600:#6C757D;
+	--neutral--900:#212529;
 
 
 }
@@ -195,6 +196,11 @@ a{
 /*------------------------------------*\
     Global
 \*------------------------------------*/
+.h2{
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1.2;
+}
 
 .h3{
 	font-weight: 700;
@@ -207,14 +213,21 @@ a{
 	font-size: 24px;
 	line-height: 1.2;
 }
-
-
+.h5{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.2;
+}
 
 .h6{
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.2;
 }
+.text-danger{
+	color: #D74F4F;
+}
+
 
 .text-primary-400{
 	color: var(--primary--400);
@@ -253,12 +266,23 @@ a{
 	padding-bottom: 24px;
 }
 
-
 .py-32{
 	padding-top: 32px;
 	padding-bottom: 32px;
 }
 
+.py-48{
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
+
+.py-64{
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+.py-8{
+	padding-right: 8px;
+}
 
 .pr-40{
 	padding-right: 40px;
@@ -269,10 +293,19 @@ a{
 	padding-right: 48px;
 }
 
+.pt-32{
+	padding-top: 32px;
+
+}
+
 
 /* margin */
 .mb-4{
 	margin-bottom: 4px;
+}
+
+.mb-8{
+	margin-bottom: 8px;
 }
 
 .mb-12{
@@ -289,6 +322,9 @@ a{
 
 .mb-32{
 	margin-bottom: 32px;
+}
+.mb-32{
+	margin-bottom: 40px;
 }
 
 .mb-48{
