@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+/*
+ * Page name
+ * Copyright 2025
+ * Auther
+ * Licensed
+*/
+
+/* ------------------------------*\
+    Content
+\* ------------------------------*/
+/**
+ * Content ................You are reading it!
+ * Base....................基礎樣式
+ ** default style........box-sizing、img 等預設樣式設定
+ ** typography...........h1~h5 標題字級與行高
+*/
+
+/* ------------------------------*\
+    Base
+\* ------------------------------*/
+
+/* ----------------*\
+    default style
+\* ----------------*/
+*,
+::before,
+::after{
+	box-sizing: border-box;
+}
+
+img{
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+body{
+	font-family: "Noto Sans TC", sans-serif,"Mina";
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: 0.05em;
+}
+
+a{
+	color: var(--neutral--900) ;
+	text-decoration: none;
+	display: block;
+	font-weight: 500;
+}
+
+/* ----------------*\
+    typography
+\* ----------------*/
+
+.h1{
+    font-size: 40px;
+    line-height: 1.2;    
+}
+
+.h2{
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1.2;
+}
+
+.h3{
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 1.2;
+}
+
+.h4{
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.2;
+}
+.h5{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+.h6{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+.text-sm{
+    font-size: 14px;
+    line-height: 1.5;
+}
+@media (max-width: 767px){
+	.h3-md {
+		font-size: 28px;
+	}
+
+	.h4-md {
+		font-size: 24px;
+	}
+	.h5-md {
+		font-size: 20px;
+	}
+	.h6-md {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 576px){
+	.h3-sm {
+		font-size: 28px;
+	}
+	.h4-sm {
+		font-size: 24px;
+	}
+	.h5-sm {
+		font-size: 20px;
+	}
+	.h6-sm {
+		font-size: 16px;
+	}
+}

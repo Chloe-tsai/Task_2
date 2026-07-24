@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+/*
+ * Page name
+ * Copyright 2025
+ * Auther
+ * Licensed
+*/
+
+/* ------------------------------*\
+    Content
+\* ------------------------------*/
+/**
+ * Gobal................. Set common styles
+ * Layout................ Set grid
+ * Components............ ... Set Components styles
+ */
+/* 變數設定 */
+:root{
+    --primary--100: #F5FEE7;
+    --primary--400: #57a203;
+    --neutral--100: #F8F9FA;
+    --neutral--300: #DEE2e6;
+    --neutral--600: #6c757d;
+    --neutral--900: #212529;
+    --neutral--white: #FFFFFF;
+}
+
+/* ------------------------------*\
+    Layout
+\* ------------------------------*/
+.container{
+    width: 100%;
+    max-width: 856px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+
+}
+
+/*------------------------------------*\
+    Navigation
+\*------------------------------------*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.navbar .container{
+    justify-content: space-between;
+    display: inline-flex;
+}
+
+.navbar .nav_item{
+    padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.navbar .nav_person{
+    padding: 12px;
+}
+
+.navbar .nav_list,.navbar .nav_item{
+    display: inline-flex;
+}
+.navbar .container,.navbar .nav_person{
+    align-content: center;
+}
+
+/* ------------------------------*\
+    Components
+\* ------------------------------*/
+
+/* navbar */
+.section_navbar{
+    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/73cf206013997d2173d20441794095af8b1ee3b9/2025-week1/hero.png");
+    background-size: cover;     
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+@media (max-width: 767px) {
+    .section_navbar{
+        background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/73cf206013997d2173d20441794095af8b1ee3b9/2025-week1/hero.png");
+        padding: 0;             
+    }
+    .section_nav{
+        padding: 87px 0;         
+    }
+}
+
+
+
+.section_nav{
+    padding: 152px 0;
+    text-align: center;
+}
+
+
+/* intro */
+.quote{
+    border-radius: 12px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .quote{
+        text-align: left;
+    }
+}
+
+.intro img{
+    display: block;
+    width: 100%;
+    max-width: 1076px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+}
+
+
+.section-lined{
+    border-bottom: 1px solid var(--neutral--300);
+}
+
+.history-list{
+    list-style-type: disc;
+    padding-left: 24px;
+}
+
+
+.history{
+    border-left: 1px solid var(--neutral--900);
+    padding-left: 8px;
+
+}
+
+.concept-item{
+    border-left: 3px solid var(--neutral--300);
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.bi{
+    padding-right: 8px;
+    vertical-align: bottom;
+}
+
+/* footer */
+.footer .container{
+    text-align: center;
+}
