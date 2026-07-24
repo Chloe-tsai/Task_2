@@ -11,86 +11,27 @@
     Content
 \* ------------------------------*/
 /**
- * Content ..............You are reading it!
- * Navigation
- * breadcrumb
- * products
- * banner
- * footer
-
+ * Content ................You are reading it!
+ * product.................所有商品
+ ** products_nav...........商品選單
+ ** pagination.............商品分頁
 */
 
-/*------------------------------------*\
-    Navigation
-\*------------------------------------*/
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-}
-
-.navbar .container{
-    justify-content: space-between;
-    display: inline-flex;
-}
-
-.navbar .nav_item{
-    padding-top: 12px;
-	padding-bottom: 12px;
-}
-
-.navbar .nav_person{
-    padding: 12px;
-}
-
-.navbar .nav_list,.navbar .nav_item{
-    display: inline-flex;
-}
-.navbar .container,.navbar .nav_person{
-    align-content: center;
-}
-
-
-/*------------------------------------*\
-    breadcrumb
-\*------------------------------------*/
-
-.breadcrumb{
-    display: flex;
-}
-
-.breadcrumb-item +.breadcrumb-item:before{
-    content: "/";
-    padding: 0 12px;
-    color: var(--neutral--300);
-    font-weight: 700;
-}
-
-.breadcrumb-link{
-    color: var(--neutral--600);
-}
-
-@media (max-width : 767px){
-    .breadcrumb-item +.breadcrumb-item:before{
-        padding: 0 8px;
-    }
-}
-
-
-.breadcrumb-item{
-    font-weight: 500;
-}
 /*------------------------------------*\
     products
 \*------------------------------------*/
 
-/* products_nav */
+/* --------------*\
+    products_nav
+\* --------------*/
+
 .products_nav_item .active{
     color: var(--primary--400);
 }
 
-/* pagination  */
+/* --------------*\
+    pagination
+\* --------------*/
 .pages{
     display: flex;
     justify-content: center;

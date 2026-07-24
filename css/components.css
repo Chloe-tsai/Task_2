@@ -13,6 +13,8 @@
 /**
  * Content ..............You are reading it!
  * Components.............元件樣式
+ ** navigation............導覽列
+ ** breadcrumb............麵包屑 
  ** banner................頁尾橫幅
  ** footer................頁尾
 */
@@ -20,6 +22,88 @@
 /* ------------------------------*\
     Compnents
 \* ------------------------------*/
+
+/* --------------*\
+    Navigation
+\* --------------*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.navbar .container{
+    justify-content: space-between;
+    display: inline-flex;
+}
+
+.navbar .nav_item{
+    padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.navbar .nav_person{
+    padding: 12px;
+}
+
+.navbar .nav_list,.navbar .nav_item{
+    display: inline-flex;
+}
+.navbar .container,.navbar .nav_person{
+    align-content: center;
+}
+
+/* section_navbar */
+.section_navbar{
+    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/73cf206013997d2173d20441794095af8b1ee3b9/2025-week1/hero.png");
+    background-size: cover;     
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+@media (max-width: 767px) {
+    .section_navbar{
+        background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/73cf206013997d2173d20441794095af8b1ee3b9/2025-week1/hero.png");
+        padding: 0;             
+    }
+    .section_nav{
+        padding: 87px 0;         
+    }
+}
+
+.section_nav{
+    padding: 152px 0;
+    text-align: center;
+}
+/* --------------*\
+    breadcrumb
+\* --------------*/
+.breadcrumb{
+    display: flex;
+}
+
+.breadcrumb-item +.breadcrumb-item:before{
+    content: "/";
+    padding: 0 12px;
+    color: var(--neutral--300);
+    font-weight: 700;
+}
+
+.breadcrumb-link{
+    color: var(--neutral--600);
+}
+
+@media (max-width : 767px){
+    .breadcrumb-item +.breadcrumb-item:before{
+        padding: 0 8px;
+    }
+}
+
+
+.breadcrumb-item{
+    font-weight: 500;
+}
 
 /* --------------*\
     banner
@@ -55,7 +139,6 @@
 		padding: 8px 16px;
 	}
 }
-
 /* --------------*\
     footer
 \* --------------*/
@@ -65,7 +148,9 @@
     justify-content: space-between;
     align-items: center;
 }
-
+.footer .container{
+    text-align: center;
+}
 .footer .footer_list {
     margin-bottom: 24px;
     display: flex;

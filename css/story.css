@@ -11,23 +11,14 @@
     Content
 \* ------------------------------*/
 /**
- * Gobal................. Set common styles
- * Layout................ Set grid
- * Components............ ... Set Components styles
- */
-/* 變數設定 */
-:root{
-    --primary--100: #F5FEE7;
-    --primary--400: #57a203;
-    --neutral--100: #F8F9FA;
-    --neutral--300: #DEE2e6;
-    --neutral--600: #6c757d;
-    --neutral--900: #212529;
-    --neutral--white: #FFFFFF;
-}
+ * Content ..............You are reading it!
+ * page layout.............頁面佈局
+ * page components.........頁面元件
+ ** intro..................介紹
+*/
 
 /* ------------------------------*\
-    Layout
+    page layout
 \* ------------------------------*/
 .container{
     width: 100%;
@@ -38,69 +29,14 @@
 
 }
 
-/*------------------------------------*\
-    Navigation
-\*------------------------------------*/
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-}
-
-.navbar .container{
-    justify-content: space-between;
-    display: inline-flex;
-}
-
-.navbar .nav_item{
-    padding-top: 12px;
-	padding-bottom: 12px;
-}
-
-.navbar .nav_person{
-    padding: 12px;
-}
-
-.navbar .nav_list,.navbar .nav_item{
-    display: inline-flex;
-}
-.navbar .container,.navbar .nav_person{
-    align-content: center;
-}
-
 /* ------------------------------*\
-    Components
+    page components
 \* ------------------------------*/
 
-/* navbar */
-.section_navbar{
-    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/73cf206013997d2173d20441794095af8b1ee3b9/2025-week1/hero.png");
-    background-size: cover;     
-    background-position: center;
-    background-repeat: no-repeat;
+/* --------------*\
+    intro
+\* --------------*/
 
-}
-
-@media (max-width: 767px) {
-    .section_navbar{
-        background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/73cf206013997d2173d20441794095af8b1ee3b9/2025-week1/hero.png");
-        padding: 0;             
-    }
-    .section_nav{
-        padding: 87px 0;         
-    }
-}
-
-
-
-.section_nav{
-    padding: 152px 0;
-    text-align: center;
-}
-
-
-/* intro */
 .quote{
     border-radius: 12px;
     text-align: center;
@@ -149,7 +85,30 @@
     vertical-align: bottom;
 }
 
-/* footer */
-.footer .container{
-    text-align: center;
+/* 底線*/
+.story-list li{
+    position: relative;
+}
+
+.story-list a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+.story-list a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary--400);
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.story-list a:hover::after{
+    transform: scaleX(1);
 }
